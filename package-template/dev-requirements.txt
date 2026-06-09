@@ -1,0 +1,4 @@
+pytest
+setuptools
+wheel
+pycryptodome==3.23.0

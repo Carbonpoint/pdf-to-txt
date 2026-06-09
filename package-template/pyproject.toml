@@ -1,0 +1,26 @@
+[project]
+name = "pdf-to-txt-app"
+version = "1.0.0"
+description = "Convert PDF files in directories and subfolders into text files in a cloned directory tree."
+readme = "README.md"
+
+requires-python = ">=3.8"
+dependencies = ["PyPDF2>=3.0", "pycryptodome==3.23.0"]
+
+[project.optional-dependencies]
+dev = ["pytest", "setuptools", "wheel"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["my_package*"]
+
+
+
+
+
+
+
