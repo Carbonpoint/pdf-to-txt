@@ -1,0 +1,28 @@
+[project]
+name = "pdf-to-txt-app"
+version = "1.0.0"
+description = "Convert PDF files to text with a hybrid Nougat OCR fallback pipeline."
+requires-python = ">=3.8"
+dependencies = [
+    "nougat-ocr",
+    "pymupdf",
+    "pdfplumber",
+    "pypdf2",
+    "pillow",
+    "numpy",
+    "opencv-python-headless",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "setuptools", "wheel"]
+
+[project.scripts]
+pdf-to-txt = "pdf_to_txt.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pdf_to_txt*"]
