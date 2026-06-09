@@ -1,13 +1,27 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Virtual env
+# Virtual environments
 .venv/
-
-# Windows
-desktop.ini
-Thumbs.db
 
 # uv
 uv.lock
+
+# OS
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Data / output (optional — adjust for your project)
+*.txt
+*.json
+*.png
