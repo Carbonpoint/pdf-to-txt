@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# uv
+uv.lock
